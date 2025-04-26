@@ -1,0 +1,45 @@
+body {
+    background-color: #f8ebd8;
+}
+
+h1.title::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 8rem;
+    z-index: 0;
+  }
+  
+  .header-image {
+    position: relative;
+  
+
+    background: url('Ref_logo.jpg') no-repeat center -80px;
+    background-size: cover;
+ 
+    padding: 10rem 1rem 2rem;
+    margin-bottom: 0;
+  }
+  
+  .header-image::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+  
+
+    height: 10rem;
+  
+   
+    z-index: 0;
+  }
+  
+  .header-image h1,
+  .header-image strong,
+  .header-image p {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+  }
+  
+  
